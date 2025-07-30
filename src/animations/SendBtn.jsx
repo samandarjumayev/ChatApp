@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SendBtn = () => {
+const SendBtn = ({title}) => {
   return (
     <StyledWrapper className='w-full'>
       <button>
@@ -13,7 +13,7 @@ const SendBtn = () => {
             </svg>
           </div>
         </div>
-        <span>Sign Up</span>
+        <span>{title}</span>
       </button>
     </StyledWrapper>
   );
@@ -21,6 +21,7 @@ const SendBtn = () => {
 
 const StyledWrapper = styled.div`
   button {
+    cursor: pointer;
     width: 100%;
     font-family: inherit;
     font-size: 18px;
