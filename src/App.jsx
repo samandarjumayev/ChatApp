@@ -7,3 +7,6 @@ function App() {
 }
 
 export default App;
+
+// npm install styled-components
+// #3A9EDB

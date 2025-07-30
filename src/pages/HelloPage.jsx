@@ -1,11 +1,20 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../images/telegram.png'
 import { useRef } from 'react';
+import PlaneSwitch from '../animations/PlaneSwitch';
+import LoadingText from '../animations/LoadingText';
 
 function HelloPage(){
     const title = useRef();
     
-    return <div className='w-full h-full flex flex-col justify-between'>
+    return <div className='w-full h-full flex flex-col justify-between relative'>
+        <div className='absolute top-[22px] right-[22px] shadow shadow-blue-400/70 rounded-full' >
+            <PlaneSwitch />
+        </div>
+        <div className='absolute top-[22px] left-[22px]'>
+            <LoadingText />
+        </div>
+
         <div ref={title} className='flex-1 flex flex-col justify-evenly items-center'>
             <img src={logo} className="w-[145px] mt-[30px]" />
             <div className='text-center'>
@@ -13,6 +22,7 @@ function HelloPage(){
                 <p className=''>The world's <b>fastest</b> messaging app. <br />
                     It is <b>free</b> and <b>secure.</b>
                 </p>
+
                 <div className='flex mt-10 gap-[8px] justify-center'>
                     <button className='bg-[#3A9EDB] w-[10px] h-[10px] rounded-full cursor-pointer'></button>
                     <button className='bg-zinc-300 w-[10px] h-[10px] rounded-full cursor-pointer'></button>
@@ -30,5 +40,3 @@ function HelloPage(){
 }
 
 export default HelloPage;
-
-// #3A9EDB
