@@ -39,7 +39,7 @@ function SignUp(){
             </div> */}
             
             <div className="absolute top-[250px] bg-[#3A9EDB] w-[1600px] h-[1600px] rounded-full flex justify-center">
-                <div ref={signCardForm} className="opacity-0 w-[330px] h-[calc(100vh-250px)] flex flex-col items-center justify-center">
+                <div ref={signCardForm} className="border opacity-0 w-[330px] h-[calc(100vh-250px)] flex flex-col items-center justify-center">
                     <label htmlFor="" className="text-white mb-1 tracking-[0.5px] selection:bg-white/0">Email</label>
                     <input type="email" placeholder="Enter your email" className="bg-white/25 outline-none py-2 px-4 w-full text-center mb-5 rounded-[20px] shadow text-white placeholder:text-zinc-200" />
 
