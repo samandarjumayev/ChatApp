@@ -21,7 +21,7 @@ function SignUp(){
             </div>
 
             <div ref={signCardForm} className="opacity-0 flex border w-full absolute bottom-0 h-[calc(100vh-250px)] flex-col items-center justify-center gap-[5px] text-white">
-                {/* <label htmlFor="" className="text-white/60 tracking-[0.5px] selection:bg-white/0">Email</label>
+                <label htmlFor="" className="text-white/60 tracking-[0.5px] selection:bg-white/0">Email</label>
                 <input type="email" placeholder="Enter your email" className="bg-white/25 outline-none py-2 px-4 w-[70%] text-center mb-5 rounded-[20px] shadow text-white placeholder:text-zinc-200" />
 
                 <label htmlFor="" className="text-white/60 tracking-[0.5px] selection:bg-white/0">Password</label>
@@ -29,21 +29,11 @@ function SignUp(){
 
                 <button className="text-[60px] w-[60px] h-[60px] text-white shadow-md cursor-pointer rounded-full flex justify-center items-center transition-all duration-300 active:duration-150 active:scale-95">
                     <i className="fa-brands fa-telegram"></i>
-                </button> */}
-            </div>
-            
-            <div className="absolute flex flex-col items-center top-[250px] z-[-1] bg-[#3A9EDB] w-[1600px] h-[1600px] rounded-full pt-20">
-                <label htmlFor="" className="text-white/60 tracking-[0.5px] selection:bg-white/0">Email</label>
-                <input type="email" placeholder="Enter your email" className="bg-white/25 outline-none py-2 px-14 text-center mb-5 rounded-[20px] shadow text-white placeholder:text-zinc-200" />
-
-                <label htmlFor="" className="text-white/60 tracking-[0.5px] selection:bg-white/0">Password</label>
-                <input type="password" placeholder="Create your password" className="bg-white/25 outline-none py-2 px-14 text-center mb-5 rounded-[20px] shadow text-white placeholder:text-zinc-200" />
-
-                <button className="text-[60px] w-[60px] h-[60px] text-white shadow-md cursor-pointer rounded-full flex justify-center items-center transition-all duration-300 active:duration-150 active:scale-95">
-                    <i className="fa-brands fa-telegram"></i>
                 </button>
             </div>
-
+            
+            <div className="absolute top-[250px] z-[-1] bg-[#3A9EDB] w-[1600px] h-[1600px] rounded-full"></div>
+            
         </div>
     </div>
 }
