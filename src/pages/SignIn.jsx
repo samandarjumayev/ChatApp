@@ -37,20 +37,6 @@ function SignIn(){
             signBack.current.style.opacity = 1;
         }, 600);
     }, []);
-
-    const handleSignUp = async () => {
-        if(!email || !password) {
-            return alert("Email va parol to'ldirilmagan!");
-        }
-
-        try {
-            await createUserWithEmailAndPassword(auth, email, password);
-            alert("Ro'yxatdan o'tdingiz!");
-            navigate('/chat');
-        }catch (err){
-            alert('Xatolik: ' + err.message);
-        }
-    }
     
     return <div className="h-full relative flex items-end">
         <NavLink to={'/'} ref={signBack} className="opacity-0 absolute text-[#3A9EDB] text-[22px] top-[22px] left-[22px] z-2 transition-all duration-100 active:scale-85">
@@ -70,7 +56,7 @@ function SignIn(){
                     <label htmlFor="" className="text-white mb-1 tracking-[0.5px] selection:bg-white/0">Password</label>
                     <input type="password" placeholder="Create your password" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-white/25 outline-none py-2 px-4 w-full text-center rounded-[20px] shadow text-white placeholder:text-zinc-200" />
 
-                    <button onClick={handleSignUp} className="mt-5 text-[60px] w-full h-[60px] text-white shadow-md cursor-pointer rounded-full flex justify-center items-center transition-all duration-300 active:duration-150 active:scale-95">
+                    <button onClick={handleSignIn} className="mt-5 text-[60px] w-full h-[60px] text-white shadow-md cursor-pointer rounded-full flex justify-center items-center transition-all duration-300 active:duration-150 active:scale-95">
                         <SendBtn title={'Log In'} />
                     </button>
                 </div>
