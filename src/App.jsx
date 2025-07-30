@@ -9,4 +9,5 @@ function App() {
 export default App;
 
 // npm install styled-components
+// npm install react-firebase-hooks
 // #3A9EDB

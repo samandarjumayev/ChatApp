@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp.jsx'
 import HelloPage from './pages/HelloPage.jsx'
 import Chat from './pages/Chat.jsx'
 import SignIn from './pages/SignIn.jsx'
+import ProtectedRoute from './ProtectedRoute.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/chat',
-        element: <Chat />
+        element: (
+          <ProtectedRoute>
+            <Chat />
+          </ProtectedRoute>
+        )
       }
     ]
   }
