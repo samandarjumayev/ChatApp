@@ -19,8 +19,10 @@ function HelloPage(){
             <img src={logo} className="w-[145px] mt-[30px]" />
             <div className='text-center'>
                 <h1 className='text-[45px] font-semibold tracking-[1px] mb-[15px]'>Chat App</h1>
-                <p className=''>The world's <b>fastest</b> messaging app. <br />
-                    It is <b>free</b> and <b>secure.</b>
+                <p className='leading-[19px]'>The world's <b>fastest</b> messaging app. <br />
+                    It is <b>free</b> and <b>secure. </b>
+                    <br />
+                    <span className='text-[12px]'>Created by <b className='text-[#3A9EDB]'>Samandar</b></span>
                 </p>
 
                 <div className='flex mt-10 gap-[8px] justify-center'>

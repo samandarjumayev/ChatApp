@@ -8,11 +8,11 @@ const LoadingText = () => {
         <div className="loader selection:bg-white/0 cursor-context-menu">
           <p className='text-[#3A9EDB]'>ChatApp</p>
           <div className="words">
+            <span className="word">Videos</span>
             <span className="word">Messages</span>
-            <span className="word">forms</span>
-            <span className="word">switches</span>
-            <span className="word">cards</span>
-            <span className="word">buttons</span>
+            <span className="word">Photos</span>
+            <span className="word">Audios</span>
+            <span className="word">Videos</span>
           </div>
         </div>
       </div>
